@@ -18,20 +18,23 @@
 
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation__button">MENU</label>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">
+          &nbsp;
+        </span>
+      </label>
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Your benfits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
 
         </ul>
       </nav>
     </div>
-
 
     <header class="header">
       <div class="header__logo-box">
@@ -42,7 +45,7 @@
           <span class="heading-primary--main">OUTDOORS</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
     </header>
     <main>
@@ -149,7 +152,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours " id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -180,7 +183,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -210,7 +213,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -240,7 +243,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -362,31 +365,7 @@
         </div>
       </section>
 
-      <footer class="footer">
-        <div class="footer__logo-box">
-          <img src="images/logo-green-2x.png" alt="Full logo" class="footer__logo">
-        </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <div class="footer__navigation">
-              <ul class="footer__list">
-                <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-
-              </ul>
-            </div>
-          </div>
-          <div class="col-1-of-2">
-            <p class="footer__copyright">
-              Built by <a href="#" class="footer__link">Vara prasad</a> for learning purpose <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by vara prasad. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Vara prasad, is of course highly appreciated!
-            </p>
-          </div>
-
-        </div>
-      </footer>
+      
 
       <!-- <section class="grid-test">
         <div class="row">
@@ -473,5 +452,51 @@
         </div>
       </section> -->
     </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="images/logo-green-2x.png" alt="Full logo" class="footer__logo">
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Vara prasad</a> for learning purpose <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by vara prasad. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Vara prasad, is of course highly appreciated!
+          </p>
+        </div>
+
+      </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="images/nat-8.jpg" alt="Tour photo" class="popup__img">
+          <img src="images/nat-9.jpg" alt="Tour photo" class="popup__img">
+
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-medium">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore consequatur alias. Nobis minus eligendi, aspernatur cupiditate pariatur dignissimos adipisci. Quos dicta, dolores molestias similique fugit temporibus, quae eligendi odio veniam fugiat, alias qui. Earum nemo et libero, porro voluptas, quidem eos odio dignissimos suscipit natus tenetur quo tempore. Aut, maxime ratione molestiae laudantium eveniet pariatur ut iusto perspiciatis velit obcaecati delectus animi harum iure commodi veniam! Blanditiis debitis inventore veritatis quas, omnis dolorum alias necessitatibus accusantium, modi neque soluta esse, sunt enim dolores libero culpa aspernatur assumenda perferendis accusamus nostrum? Rerum, dignissimos mollitia nesciunt quo maiores aut at dolorem.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
